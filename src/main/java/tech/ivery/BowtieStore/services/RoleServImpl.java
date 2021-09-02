@@ -1,4 +1,4 @@
-package services;
+package tech.ivery.BowtieStore.services;
 
 import java.util.HashSet;
 import java.util.List;
@@ -7,9 +7,9 @@ import java.util.Set;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import exceptions.RoleNotFoundException;
-import models.Role;
-import repositories.RoleRepo;
+import tech.ivery.BowtieStore.exceptions.RoleNotFoundException;
+import tech.ivery.BowtieStore.models.Role;
+import tech.ivery.BowtieStore.repositories.RoleRepo;
 
 @Service
 public class RoleServImpl implements RoleService {

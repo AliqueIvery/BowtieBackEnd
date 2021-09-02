@@ -1,4 +1,4 @@
-package services;
+package tech.ivery.BowtieStore.services;
 
 import java.util.HashSet;
 import java.util.List;
@@ -7,9 +7,9 @@ import java.util.Set;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import exceptions.UserNotFoundException;
-import models.User;
-import repositories.UserRepo;
+import tech.ivery.BowtieStore.exceptions.UserNotFoundException;
+import tech.ivery.BowtieStore.models.User;
+import tech.ivery.BowtieStore.repositories.UserRepo;
 
 @Service
 public class UserServImpl implements UserService {

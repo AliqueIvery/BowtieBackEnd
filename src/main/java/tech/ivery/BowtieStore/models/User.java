@@ -1,4 +1,4 @@
-package models;
+package tech.ivery.BowtieStore.models;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;

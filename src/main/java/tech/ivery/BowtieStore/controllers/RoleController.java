@@ -1,19 +1,19 @@
-package controllers;
+package tech.ivery.BowtieStore.controllers;
 
 import java.util.Set;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
-import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
 
-import exceptions.RoleNotFoundException;
-import models.Role;
-import services.RoleServImpl;
+import tech.ivery.BowtieStore.exceptions.RoleNotFoundException;
+import tech.ivery.BowtieStore.models.Role;
+import tech.ivery.BowtieStore.services.RoleServImpl;
 
-@Controller
+@RestController
 @RequestMapping("/role")
 public class RoleController {
 	private RoleServImpl rServ;
