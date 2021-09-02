@@ -1,9 +1,9 @@
-package services;
+package tech.ivery.BowtieStore.services;
 
 import java.util.Set;
 
-import exceptions.UserNotFoundException;
-import models.User;
+import tech.ivery.BowtieStore.exceptions.UserNotFoundException;
+import tech.ivery.BowtieStore.models.User;
 
 public interface UserService {
 	public User addUser(User user) throws Exception;

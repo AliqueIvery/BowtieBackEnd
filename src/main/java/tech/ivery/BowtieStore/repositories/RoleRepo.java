@@ -1,12 +1,12 @@
-package repositories;
+package tech.ivery.BowtieStore.repositories;
 
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Query;
 import org.springframework.data.repository.query.Param;
 import org.springframework.stereotype.Repository;
 
-import exceptions.RoleNotFoundException;
-import models.Role;
+import tech.ivery.BowtieStore.exceptions.RoleNotFoundException;
+import tech.ivery.BowtieStore.models.Role;
 
 @Repository
 public interface RoleRepo extends JpaRepository<Role, Integer> {

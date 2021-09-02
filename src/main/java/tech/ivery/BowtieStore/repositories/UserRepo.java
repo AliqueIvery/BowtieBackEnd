@@ -1,12 +1,12 @@
-package repositories;
+package tech.ivery.BowtieStore.repositories;
 
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Query;
 import org.springframework.data.repository.query.Param;
 import org.springframework.stereotype.Repository;
 
-import exceptions.UserNotFoundException;
-import models.User;
+import tech.ivery.BowtieStore.exceptions.UserNotFoundException;
+import tech.ivery.BowtieStore.models.User;
 
 @Repository
 public interface UserRepo extends JpaRepository<User, Integer> {
