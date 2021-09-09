@@ -12,15 +12,15 @@ import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 
 import tech.ivery.BowtieStore.models.Color;
-import tech.ivery.BowtieStore.repositories.ColorServImpl;
+import tech.ivery.BowtieStore.services.ColorService;
 
 @Controller
 @RequestMapping("/color")
 public class ColorController {
-	private ColorServImpl cServ;
+	private ColorService cServ;
 	
 	@Autowired
-	public ColorController(ColorServImpl c) {
+	public ColorController(ColorService c) {
 		this.cServ = c;
 	}
 	

@@ -12,4 +12,6 @@ import tech.ivery.BowtieStore.models.User;
 public interface UserRepo extends JpaRepository<User, Integer> {
 	@Query(value="select * from user where id = :id", nativeQuery = true)
 	public User getUserById(@Param("id") Integer id) throws UserNotFoundException;
+	@Query(value="select * from user where username = :username", nativeQuery=true)
+	public User getUserByUsername(@Param("username") String username) throws UserNotFoundException;
 }
