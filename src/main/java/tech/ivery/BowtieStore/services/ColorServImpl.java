@@ -11,6 +11,7 @@ import tech.ivery.BowtieStore.models.Color;
 import tech.ivery.BowtieStore.repositories.ColorRepo;
 @Service
 public class ColorServImpl implements ColorService {
+	
 	private ColorRepo cRepo;
 	
 	@Autowired

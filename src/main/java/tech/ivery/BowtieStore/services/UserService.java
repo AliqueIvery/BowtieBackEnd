@@ -8,6 +8,7 @@ import tech.ivery.BowtieStore.models.User;
 public interface UserService {
 	public User addUser(User user) throws Exception;
 	public User getUserById(Integer id) throws UserNotFoundException;
+	public User getUserByUsername(String username) throws UserNotFoundException;
 	public Set<User> getAllUser();
 	public void updateUser(User user);
 	public void deleteUser(User user);

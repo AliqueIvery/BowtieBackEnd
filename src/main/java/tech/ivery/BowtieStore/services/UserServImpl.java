@@ -65,5 +65,10 @@ public class UserServImpl implements UserService {
 			e.printStackTrace();
 		}
 	}
+	@Override
+	public User getUserByUsername(String username) throws UserNotFoundException {
+		// TODO Auto-generated method stub
+		return uRepo.getUserByUsername(username);
+	}
 
 }
